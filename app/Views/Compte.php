@@ -15,7 +15,7 @@
  
           <div class="form-group">
             <label for="formGroupExampleInput">Account Number</label>
-            <input type="text" name="name" class="form-control" id="formGroupExampleInput">
+            <input type="text" name="accountnumber" class="form-control" id="formGroupExampleInput">
              
           </div> 
  
@@ -27,7 +27,7 @@
  
           <div class="form-group">
             <label for="clerib">Cle rib</label>
-            <input type="text" name="solde" class="form-control" id="solde">
+            <input type="text" name="clerib" class="form-control" id="solde">
              
           </div>
  

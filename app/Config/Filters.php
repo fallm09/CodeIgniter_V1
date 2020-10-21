@@ -1,5 +1,6 @@
 <?php namespace Config;
 
+use App\Filters\Comptefilter;
 use CodeIgniter\Config\BaseConfig;
 
 class Filters extends BaseConfig
@@ -10,17 +11,21 @@ class Filters extends BaseConfig
 		'csrf'     => \CodeIgniter\Filters\CSRF::class,
 		'toolbar'  => \CodeIgniter\Filters\DebugToolbar::class,
 		'honeypot' => \CodeIgniter\Filters\Honeypot::class,
+		'Comptefilter'   =>\App\Filters\Comptefilter ::class,
 	];
 
 	// Always applied before every request
 	public $globals = [
 		'before' => [
-			//'honeypot'
+			//'honeypot' 
 			// 'csrf',
+			'Comptefilter',
+
 		],
 		'after'  => [
 			'toolbar',
 			//'honeypot'
+			'Comptefilter',
 		],
 	];
 

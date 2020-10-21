@@ -23,7 +23,8 @@ class Compte extends Controller
 			  'accountnumber' =>$this->request->getVar('accountnumber'),
 			  'solde' =>$this->request->getVar('solde'),
 			  'clerib' =>$this->request->getVar('clerib'),
-		       ];
+			   ];
+			
 			  $save = $builder->insert($data);
 
 			return view ('compte');

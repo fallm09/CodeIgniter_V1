@@ -49,7 +49,7 @@ class Database extends \CodeIgniter\Database\Config
 		'strictOn' => false,
 		'failover' => [],
 		'port'     => 3306,
-	];
+	]; 
 
 	/**
 	 * This database connection is used when
